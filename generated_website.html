@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swedish Medical Language Conference 2024</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #4f46e5, 0 0 10px #4f46e5, 0 0 15px #4f46e5, 0 0 20px #4f46e5; }
+            100% { box-shadow: 0 0 10px #4f46e5, 0 0 20px #4f46e5, 0 0 30px #4f46e5, 0 0 40px #4f46e5; }
+        }
+        .glow-bg {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <nav class="fixed w-full bg-white bg-opacity-90 shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-indigo-600">SMLC 2024</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-indigo-600 transition duration-300">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-indigo-600 transition duration-300">About</a>
+                    <a href="#topics" class="text-gray-700 hover:text-indigo-600 transition duration-300">Topics</a>
+                    <a href="#schedule" class="text-gray-700 hover:text-indigo-600 transition duration-300">Schedule</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="h-6 w-6 fill-current text-gray-700" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 glow-bg">
+        <div class="text-center text-white p-8">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-pulse">Swedish Medical Language Conference 2024</h1>
+            <p class="text-xl md:text-2xl mb-8">Exploring the Cutting Edge of NLP in Healthcare</p>
+            <a href="#about" class="bg-white text-indigo-600 px-8 py-3 rounded-full font-bold hover:bg-indigo-100 transition duration-300">Learn More</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">About the Conference</h2>
+            <p class="text-xl text-gray-600 text-center max-w-4xl mx-auto">
+                Join leading researchers and practitioners to discuss advancements, challenges, and future directions in medical language understanding. The conference takes place on September 30th, 2024, bringing together experts in Natural Language Processing and Large Language Models in healthcare.
+            </p>
+        </div>
+    </section>
+
+    <section id="topics" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Conference Topics</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">NLP in Clinical Decision Support</h3>
+                    <p class="text-gray-600">Explore how NLP is revolutionizing clinical decision-making processes.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Medical Language Models</h3>
+                    <p class="text-gray-600">Discover the latest advancements in language models tailored for healthcare applications.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-4">Ethical AI in Healthcare</h3>
+                    <p class="text-gray-600">Discuss the ethical implications of AI and NLP in medical contexts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="schedule" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">Conference Schedule</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="mb-8 p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">09:00 - Opening Keynote</h3>
+                    <p class="text-gray-600">The Future of NLP in Swedish Healthcare</p>
+                </div>
+                <div class="mb-8 p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">11:00 - Panel Discussion</h3>
+                    <p class="text-gray-600">Challenges in Implementing LLMs in Clinical Settings</p>
+                </div>
+                <div class="mb-8 p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">14:00 - Research Presentations</h3>
+                    <p class="text-gray-600">Showcasing Innovative NLP Projects in Medicine</p>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg">
+                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">16:30 - Closing Remarks</h3>
+                    <p class="text-gray-600">Reflecting on the Day and Future Directions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-indigo-600 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Swedish Medical Language Conference. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
